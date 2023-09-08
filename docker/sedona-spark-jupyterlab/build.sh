@@ -22,7 +22,7 @@ SEDONA_VERSION=$2
 BUILD_MODE=$3
 
 lower_version=$(echo -e ${SPARK_VERSION}"\n3.4" | sort -V | head -n1)
-if [ $lower_version = "3.4" ]; then
+if [ "$lower_version" = "3.4" ]; then
     SEDONA_SPARK_VERSION=3.4
 else
     SEDONA_SPARK_VERSION=3.0
