@@ -48,7 +48,7 @@ echo "spark.driver.memory 4g" >> ${SPARK_HOME}/conf/spark-defaults.conf
 echo "spark.executor.memory 4g" >> ${SPARK_HOME}/conf/spark-defaults.conf
 
 # Install required libraries for GeoPandas on Apple chip mac
-apt-get install -y gdal-bin libgdal-dev
+# apt-get install -y gdal-bin libgdal-dev
 
 # Install OpenSSH for cluster mode
 apt-get install -y openssh-client openssh-server

@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-FROM ubuntu:22.04
+FROM ghcr.io/osgeo/gdal:ubuntu-small-3.7.1
 
 ARG shared_workspace=/opt/workspace
 ARG spark_version=3.3.2
